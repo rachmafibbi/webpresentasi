@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
+    <title>pklbkbnurulfikri</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <!-- Navigation -->
+    <div class="row justify-content-end">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
+            <nav id="navbar" class="navbar navbar-expand-lg position-absolute top-0 ms-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-5">
+                        <a class="nav-item nav-link active text-center mx-3" href="#home">Home</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#portfolio">Portofolios</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#team">Team</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- First section -->
+    <div id="home" class="frontpage">
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    <div class="left col-12 col-lg-4">
+                        <div class="col-4 d-none d-lg-block">
+                            <div class="logo">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="header">
+                                <div class="header-text">
+                                    <h1>
+                                        Desain <span class="highlighted"> Infografis </span>  
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-lg-start justify-content-center buttons">
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="main-button btn-view-portfolio text-center" href="#portfolio">Hasil Kerja</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <div class="indicators">
+                                    <span class="indicator-main" onclick="currentSlide(1)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(2)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(3)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(4)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="gallery">
+                                <img src="img/slides/nf1.jpeg" alt="nf">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/notebook.jpg" alt="notebook">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/man.jpg" alt="man">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/Capture.PNG" alt="coffee">
+                            </div>
+                            <div class="arrows d-none d-lg-block">
+                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <!-- Second secrtion -->
+        <section>
+            <div id="accordion">
+                <div class="expertize container">
+
+                    <div class="cards row justify-content-between">
+                        <div class="col">
+                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <i class="card-icon bi bi-card-text"></i>
+                                <p class="subtitles">NAMA <br> PERUSAHAAN</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="headingTwo" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="card-icon bi bi-building"></i>
+                                <p class="subtitles">BIDANG <br> USAHA</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="card-icon bi bi-people-fill"></i>
+                                <p class="subtitles">STRUKTUR <br> ORGANISASI</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="headingFour" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-alarm"></i>
+                                <p class="subtitles">JAM <br> KERJA</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div id="headingFive" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-geo-alt"></i>
+                                <p class="subtitles">ALAMAT <br> PERUSAHAAN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="content row collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>BKB <br><span class="highlighted">NURUL FIKRI </span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Bimbingan dan Konsultasi Belajar Nurul Fikri (BKB NF) merupakan salah satu institusi pendidikan yang berada di bawah naungan Yayasan Nurul Fikri. BKB NF dirintis pada tahun 1985 oleh sekumpulan mahasiswa muslim Universitas Indonesia yang memiliki kepedulian tinggi terhadap kondisi umat saat itu. Mereka kemudian saling bertukar pikiran mencari bentuk amal nyata yang dapat disumbangkan. Tercetuslah ide untuk menyelenggarakan suatu aktifitas yang sesuai dengan potensi yang mereka miliki, yaitu membuat lembaga bimbingan belajar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="content row collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>BIDANG <br><span class="highlighted">USAHA </span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            Telah kita ketahui bahwa BKB Nurul Fikri adalah perusahaan yang bergerak di bidang jasa pendidikan. BKB Nurul Fikri menyediakan jasa pendidikan dari jenjang kelas 1 Sekolah Dasar (SD) sampai dengan kelas 12 Sekolah Menengah Atas (SMA), selain itu BKB NF menyediakan Program Alumni Sekolah Menengah Atas (SMA) yang dinamakan RONIN, juga menyediakan pembelajaran PPLS untuk para pelajar kelas 12 tetapi difokuskan untuk SBMPTN (Seleksi Bersama Masuk Perguruan Tinggi Negeri) dengan melayani para pelajar dengan sebaik mungkin, membuat program belajar yang unik dan menarik yang merupakan hasil pekerjaan karyawan-karyawan BKB Nurul Fikri yang profesional dalam bidangnya.</p>
+                        </div>
+                    </div>
+
+                    <div id="collapseThree" class="content row collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>STRUKTUR <br><span class="highlighted">ORGANISASI </span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img src="img/portfolio/struktur .png" style="height: 400px; width: 400px"> 
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="content row collapse" aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>JAM <br><span class="highlighted">KERJA </span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Jam Kerja    Aktifitas <br>
+                               07.40 WIB   Masuk kerja <br>
+                               11.45 WIB   Istirahat Pertama (Shalat Dzuhur, makan) <br>
+                               12.45 WIB   Masuk kembali <br>
+                               15.00 WIB   Istirahat kedua (Shalat Ashar) <br>
+                               17.00 WIB   Selesai berkerja </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseFive" class="content row collapse" aria-labelledby="headingFive"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>ALAMAT <br><span class="highlighted">PERUSAHAAN </span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Jl. Taman Marga Satwa No.6 RT.9/RW.5, Kel. Jati Padang, Kec. Pasar Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12540</p>
+                        </div>   
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Second section -->
+        <section id="portfolio">
+            <!--  id only for scrolling -->
+            <div class="portfolio">
+                <div class="portfolio-header-area">
+                    <div class="container">
+                        <div class="portfolio-header">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4">
+                                    <h2>Portfolio</h2>
+                                </div>
+                                <div id="filters" class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio active" data-filter=".c4">Hasil Kerja</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c1">Software yang
+                                            Digunakan </button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c2">Alat yang
+                                            Digunakan</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c3">Foto Kegiatan PKL </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-body">
+                    <div class="container">
+                        <div class="row grid">
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/ai1.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/ai2.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/ai3.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/ai4.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/ai5.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/corel1.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/corel2.jpg">
+                            </div>
+                            <div class="col-sm-4 all c4">
+                                <img class="img-fluid" style="margin-bottom: 25px;" src="img/portfolio/corel3.jpg">
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/coreldraw.png">
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/illustrator.png">
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/premiere.png">
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/encoder.png">
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/word.png">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/hardisk.jfif">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/lighting.png">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/laptop.jfif">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/kamera.jfif">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/pc.jfif">
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/wifi.jfif">
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/keg1.jpeg">
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/keg2.jpeg">
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <img class="img-fluid" style="margin: 25px;" src="img/portfolio/keg3.jpeg">
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/keg4.jpeg">
+                            </div>
+                            <div class="col-sm-4 all c3">
+                                <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/portfolio/keg5.jpeg">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <a id="load-more" class="main-button my-5">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Fourth section -->
+        <section id="team">
+            <div class="team"> 
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-md-6">
+                            <h2>Kelompok <span class="highlighted">PKL </span></h2>
+                            <p class="mt-5">RACHMA FIBBI AULIA
+
+
+
+                            <br><br> REVA DWIYANTI </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" style="height: 400px; width: 400px; margin: 25px;" src="img/foto.jpg" alt="foto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qna">
+            <div class="portfolio">
+                <div class="portfolio-header-area" style="height:800px; ">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                      <div class="d-flex flex-column">
+                        <h2 class="text align-self-center p-2">Ada Pertanyaan? </h2>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/gallery.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/scrolls.js"></script>
+    <script src="js/validation.js"></script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+
+</body>
+
+</html>
